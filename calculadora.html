@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Impuesto a las Ganancias - Calcula tu impuesto fácilmente</title>
+    <meta name="description"
+        content="Calculadora de Impuesto a las Ganancias en línea para calcular cuánto pagarás en impuestos sobre tus ingresos brutos mensuales. Incluye descuentos adicionales y resultados claros.">
+    <meta name="keywords"
+        content="calculadora de impuesto, impuestos sobre ingresos, cálculo de ganancias, impuestos mensuales, obra social, jubilación">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Calculadora de Impuesto a las Ganancias">
+    <meta property="og:description"
+        content="Utiliza nuestra calculadora de Impuesto a las Ganancias para determinar fácilmente cuánto deberás pagar en impuestos sobre tus ingresos mensuales. Incluye descuentos de obra social y jubilación.">
+        <meta property="og:url" content="https://www.linkedin.com/in/francoparedes1992/">
+        <meta property="og:type" content="website">
+        <link rel="stylesheet" href="estilos.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculadora de Impuesto a las Ganancias</h1>
+        <label for="income">Ingrese sus ingresos brutos mensuales:</label>
+        <input type="number" id="income" placeholder="Ingrese su sueldo bruto">
+
+        <label for="status">Seleccione su estado:</label>
+        <select id="status">
+            <option value="soltero">Soltero</option>
+            <option value="casado_sin_hijos">Casado sin hijos</option>
+            <option value="casado_con_hijos">Casado con 2 hijos</option>
+        </select>
+
+        <button onclick="calcularImpuesto()">Calcular</button>
+
+        <div id="resultado" class="result"></div>
+        <hr>
+        <div>
+            <h6>Desarrollado por <a href="https://www.linkedin.com/in/francoparedes1992/">Etiketaa</a>
+            </h6>
+        </div>
+</body>
+
+</html>
